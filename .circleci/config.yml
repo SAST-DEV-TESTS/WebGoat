@@ -11,8 +11,8 @@ jobs:
       - run:
           name: "Profile Mend CLI"
           command: |
-            curl -sS http://downloads.mend.io/cli/darwin_arm64/test/helloworld -o /usr/local/bin/helloworld && chmod +x /usr/local/bin/helloworld
-            gtime -v helloworld
+            curl -sS http://downloads.mend.io/cli/darwin_arm64/test/novitest -o /usr/local/bin/novitest && chmod +x /usr/local/bin/novitest
+            gtime -v novitest
           environment: 
             MEND_USER_KEY: ${PROJECT_MEND_USER_KEY}
             MEND_URL: ${PROJECT_MEND_URL}
